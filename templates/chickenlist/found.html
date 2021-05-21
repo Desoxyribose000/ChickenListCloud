@@ -1,0 +1,26 @@
+{% extends 'chickenlist/std.html' %}
+
+
+{% block content %}
+
+
+<div id="top" class="section">
+    <br>
+    <div class="restricted">
+		<h2>{{ title }}</h2>
+    </div>
+</div>
+
+<div class="section">
+    <div class="restricted">
+        <h6 style="color: {{ color }};display: block;font-size: 18px;font-weight: bold;">Status: {{ state }}</h6>
+        <p class="subtext">
+             Letzter Impftermin: {{ last_date }}<br>
+             Nächster empfohlener Impftermin: {{ next_date }}<br>
+             Tage seit dem letzten Impftermin: {{ days_gone }}
+        </p>
+    </div>
+</div>
+
+
+{% endblock %}

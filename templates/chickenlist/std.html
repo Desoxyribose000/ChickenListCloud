@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="DE">
+<head>
+    <meta charset="UTF-8">
+	<link href="https://chickenlist.s3.amazonaws.com/style/style.css" type="text/css" rel="stylesheet">
+    <title>{{ title }}</title>
+	<!-- Autor: Max Nowak -->
+	<!-- Datum: 21.05.2021 -->
+
+
+
+</head>
+<body>
+    <div id="wrapper">
+            <!-- Navbar | navtop
+            *	is used for linking sides and sub-sides of the webside
+            *	<a class="navlink top-navlink current" href="./index.html">Home</a>
+            *	.current is only for the page it self used
+            *	the toplevel linkage shall not be changed between sub-sides
+            *	href has to altered in case of sub-sides
+            -->
+
+        <div class="navbar">
+            <nav class="navtop">
+                <div class="content nav">
+                    <div id="logo">
+                        <img src="https://chickenlist.s3.amazonaws.com/media/DNA_Profil.png" width="50" alt="DNA-Logo">
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="main">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+
+        <div id="footer">
+                <a class="link" href="https://www.th-brandenburg.de/startseite/">
+                    <img class="w-back" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Technische_Hochschule_Brandenburg_Logo.svg" height="50" alt="Logo der Technischen Hochschule Brandenburg">
+                </a>
+        </div>
+    </div>
+
+</body>
+</html>
